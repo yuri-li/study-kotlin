@@ -8,7 +8,7 @@ build/
 logs/
 
 **/.gradle/
-**/gradle/wrapper/gradle-wrapper.jar
+!**/gradle/wrapper/gradle-wrapper.jar
 **/build/
 **/.kotlintest/
 **/logs/
