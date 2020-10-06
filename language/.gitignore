@@ -1,8 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gradle/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 build/
 .kotlintest/
 logs/
@@ -13,5 +10,8 @@ logs/
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+
+**/src/main/**/build/
+**/src/test/**/build/
+**/src/main/**/out/
+**/src/test/**/out/
