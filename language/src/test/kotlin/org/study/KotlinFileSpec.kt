@@ -7,7 +7,6 @@ import io.kotest.matchers.shouldBe
 import io.kotest.matchers.types.shouldBeTypeOf
 import java.time.LocalDate
 
-fun sum(x: Int, y: Int) = x + y
 
 class KotlinFileSpec : StringSpec({
     "test my first function"{
@@ -18,7 +17,7 @@ class KotlinFileSpec : StringSpec({
         i.shouldBeTypeOf<Int>()
     }
     "data class"{
-        val user = User("001", 18, true, LocalDate.of(2002,7,8))
+        val user = User("001", 18, true, LocalDate.of(2002, 7, 8))
 
         user.id.shouldBe("001")
         user.gender.shouldBeTrue()
@@ -33,11 +32,15 @@ class KotlinFileSpec : StringSpec({
         user.toString()
             .shouldBe("User(id=001, age=18, gender=true, birthday=2002-07-08)")
     }
-}){
+}) {
     data class User(
         val id: String,
         val age: Int,
         val gender: Boolean,
         val birthday: LocalDate
     )
+
+    companion object {
+        fun sum(x: Int, y: Int) = x + y
+    }
 }

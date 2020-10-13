@@ -1,3 +1,3 @@
 rootProject.name = "study-kotlin"
 
-include("language")
+include("language", "design-patterns")
