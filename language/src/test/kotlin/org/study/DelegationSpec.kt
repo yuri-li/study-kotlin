@@ -11,6 +11,10 @@ class DelegationSpec : StringSpec({
         Thread.sleep(10000)
     }
 }) {
+    suspend fun greet(){
+        println("hello world")
+    }
+
     interface LoadImage {
         fun loading():Unit
     }

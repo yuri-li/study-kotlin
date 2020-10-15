@@ -34,3 +34,15 @@ include("desigin-patterns")
 - `data class`自带`copy`方法
 - 可以使用命名参数，修改指定的属性值
 
+# 5 Builder
+
+`data class`
+
+# 6 Factory
+
+
+
+# 7 Adapter
+
+`extension function`
+
